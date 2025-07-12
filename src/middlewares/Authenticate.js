@@ -18,3 +18,5 @@ const authenticate = (req, res, next) => {
     }
 };
 module.exports = authenticate;
+
+//coment: Este middleware verifica el token JWT en las solicitudes protegidas, asegurando que el usuario esté autenticado antes de acceder a las rutas. Si el token es válido, se decodifica y se adjunta al objeto `req` para su uso posterior. Si no es válido o no se proporciona, se devuelve un error 401.
